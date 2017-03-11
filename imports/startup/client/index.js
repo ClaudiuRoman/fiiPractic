@@ -1,0 +1,1 @@
+import '/imports/api/globals/nasty-globals.js';
