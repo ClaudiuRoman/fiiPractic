@@ -1,1 +1,1 @@
-import '/imports/api/globals/nasty-globals.js';
+import '/imports/routing';

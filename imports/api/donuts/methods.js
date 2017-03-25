@@ -21,5 +21,20 @@ Meteor.methods({
 
     'donut.remove': function (id) {
         return Donuts.remove({_id: id});
+    },
+    
+    'donuts.list': function () {
+        return Donuts.find().fetch();
+    },
+    
+    'donut.add': function(data) {
+        Donuts.insert(data);
+    },
+    'donut.edit': function(id, data) {
+        Donuts.update(id, {
+            $set: {
+                name: data.name
+            }
+        });
     }
 });
